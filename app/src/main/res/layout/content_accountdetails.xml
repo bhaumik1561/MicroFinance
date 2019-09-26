@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Accountdetails"
+    tools:showIn="@layout/activity_accountdetails">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="User Account Details"
+            android:textSize="40dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.75"
+                android:layout_height="match_parent"
+                android:text="Balance"
+                android:textSize="30dp"
+               />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.75"
+                android:layout_height="match_parent"
+                android:text="Shares"
+                android:textSize="24dp"
+                android:id="@+id/add"/>
+            <EditText
+
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.75"
+                android:layout_height="match_parent"
+                android:text="Project"
+                android:textSize="24dp"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.75"
+                android:layout_height="match_parent"
+                android:text="Membership"
+                android:textSize="24dp"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:id="@+id/Next"
+            android:text="Next"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

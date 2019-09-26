@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MICROFINANCE"
+        android:textSize="40dp"
+       android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/username"
+            />
+
+        <EditText
+            android:id="@+id/usernm"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/password"
+            />
+        <EditText
+
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/pass"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/login"
+        android:text="Login"
+        android:textSize="25dp"
+
+        />
+</LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

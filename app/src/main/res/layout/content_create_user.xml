@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".create_user"
+    tools:showIn="@layout/activity_create_user">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/new_user"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@drawable/username" />
+
+            <EditText
+                android:layout_width="245dp"
+                android:layout_height="match_parent"
+                android:hint="Enter the name"
+                android:id="@+id/name"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@drawable/address" />
+
+            <EditText
+                android:layout_width="245dp"
+                android:layout_height="match_parent"
+                android:hint="Enter the address"
+                android:id="@+id/address"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@drawable/contacts"/>
+
+            <EditText
+                android:layout_width="245dp"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_the_contact_number"
+                android:id="@+id/phno"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="ADD"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
